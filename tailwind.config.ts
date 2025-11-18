@@ -57,6 +57,11 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        velox: {
+          "neon-green": "#00FF41",
+          "soft-grey": "hsl(var(--soft-grey))",
+          "light-grey": "hsl(var(--light-grey))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
