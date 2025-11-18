@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Map } from "./Map";
 
 export const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -28,21 +29,9 @@ export const ContactUs = () => {
     <section className="w-full py-20 bg-white px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          {/* Left: Decorative bat silhouette */}
+          {/* Left: Map showing Bangalore location */}
           <div className="lg:col-span-4 flex justify-center lg:justify-start">
-            <div className="relative w-40 h-96">
-              {/* Minimalist bat silhouette */}
-              <svg
-                viewBox="0 0 100 300"
-                className="w-full h-full text-black/20"
-                fill="currentColor"
-              >
-                <rect x="40" y="0" width="20" height="80" />
-                <ellipse cx="50" cy="120" rx="35" ry="15" />
-                <rect x="35" y="140" width="30" height="150" rx="5" />
-                <ellipse cx="50" cy="280" rx="20" ry="10" />
-              </svg>
-            </div>
+            <Map />
           </div>
 
           {/* Right: Contact form */}
