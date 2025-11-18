@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { CategoryIcon } from "./CategoryIcon";
 
 export const CategoryCards = () => {
   return (
@@ -24,7 +25,7 @@ export const CategoryCards = () => {
               <div className="absolute bottom-0 left-0 h-1 w-0 bg-velox-neon-green group-hover:w-full transition-all duration-300" />
 
               <div className="relative z-10 text-center space-y-4">
-                <div className="text-7xl">🏏</div>
+                <CategoryIcon type="leather-ball" className="w-24 h-24 mx-auto" />
                 <div>
                   <h3 className="text-2xl font-bold text-black">
                     Leather Ball Bats
@@ -48,7 +49,7 @@ export const CategoryCards = () => {
               <div className="absolute bottom-0 left-0 h-1 w-0 bg-velox-neon-green group-hover:w-full transition-all duration-300" />
 
               <div className="relative z-10 text-center space-y-4">
-                <div className="text-7xl">🎾</div>
+                <CategoryIcon type="tennis-scoop" className="w-24 h-24 mx-auto" />
                 <div>
                   <h3 className="text-2xl font-bold text-black">
                     Hard Tennis Scoop Bats
