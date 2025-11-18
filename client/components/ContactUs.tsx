@@ -28,14 +28,14 @@ export const ContactUs = () => {
   return (
     <section className="w-full py-20 bg-white px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Left: Map showing Bangalore location */}
-          <div className="lg:col-span-4 flex justify-center lg:justify-start">
+          <div className="flex justify-center lg:justify-start">
             <Map />
           </div>
 
           {/* Right: Contact form */}
-          <div className="lg:col-span-8">
+          <div>
             <div>
               <h2 className="text-4xl sm:text-5xl font-bold text-black mb-2">
                 Get In Touch
