@@ -12,26 +12,26 @@ export const CategoryCards = () => {
           </h2>
         </div>
 
-        {/* Two column grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        {/* Three column grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Leather Ball Bats Card */}
           <Link
             to="/category/leather-ball"
-            className="group relative rounded-2xl overflow-hidden cursor-pointer"
+            className="group relative rounded-xl overflow-hidden cursor-pointer"
           >
-            <div className="bg-gradient-to-br from-grey-50 to-grey-100 aspect-square flex items-center justify-center relative overflow-hidden transition-all duration-300 hover:shadow-2xl">
+            <div className="bg-gradient-to-br from-grey-50 to-grey-100 aspect-square flex items-center justify-center relative overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-105">
               {/* Hover overlay with neon green accent */}
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors" />
-              <div className="absolute bottom-0 left-0 h-1 w-0 bg-velox-neon-green group-hover:w-full transition-all duration-300" />
+              <div className="absolute top-0 left-0 h-1 w-0 bg-velox-neon-green group-hover:w-full transition-all duration-300" />
 
-              <div className="relative z-10 text-center space-y-4">
-                <CategoryIcon type="leather-ball" className="w-24 h-24 mx-auto" />
+              <div className="relative z-10 text-center space-y-2 px-4">
+                <CategoryIcon type="leather-ball" className="w-16 h-16 mx-auto" />
                 <div>
-                  <h3 className="text-2xl font-bold text-black">
+                  <h3 className="text-lg font-bold text-black">
                     Leather Ball Bats
                   </h3>
-                  <p className="text-sm text-black/60 mt-2">
-                    Cricket tradition redefined
+                  <p className="text-xs text-black/60 mt-1">
+                    Cricket tradition
                   </p>
                 </div>
               </div>
@@ -41,20 +41,20 @@ export const CategoryCards = () => {
           {/* Hard Tennis Scoop Bats Card */}
           <Link
             to="/category/tennis-scoop"
-            className="group relative rounded-2xl overflow-hidden cursor-pointer"
+            className="group relative rounded-xl overflow-hidden cursor-pointer"
           >
-            <div className="bg-gradient-to-br from-grey-50 to-grey-100 aspect-square flex items-center justify-center relative overflow-hidden transition-all duration-300 hover:shadow-2xl">
+            <div className="bg-gradient-to-br from-grey-50 to-grey-100 aspect-square flex items-center justify-center relative overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-105">
               {/* Hover overlay with neon green accent */}
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors" />
-              <div className="absolute bottom-0 left-0 h-1 w-0 bg-velox-neon-green group-hover:w-full transition-all duration-300" />
+              <div className="absolute top-0 left-0 h-1 w-0 bg-velox-neon-green group-hover:w-full transition-all duration-300" />
 
-              <div className="relative z-10 text-center space-y-4">
-                <CategoryIcon type="tennis-scoop" className="w-24 h-24 mx-auto" />
+              <div className="relative z-10 text-center space-y-2 px-4">
+                <CategoryIcon type="tennis-scoop" className="w-16 h-16 mx-auto" />
                 <div>
-                  <h3 className="text-2xl font-bold text-black">
+                  <h3 className="text-lg font-bold text-black">
                     Hard Tennis Scoop Bats
                   </h3>
-                  <p className="text-sm text-black/60 mt-2">
+                  <p className="text-xs text-black/60 mt-1">
                     Power meets precision
                   </p>
                 </div>
