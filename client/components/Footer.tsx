@@ -171,18 +171,30 @@ export const Footer = () => {
               Support
             </h4>
             <nav className="space-y-2 flex flex-col">
-              <Link to="/" className="text-black/70 hover:text-black transition-colors text-sm">
+              <button
+                onClick={() => setOpenModal("shipping")}
+                className="text-black/70 hover:text-black transition-colors text-sm text-left"
+              >
                 Shipping Info
-              </Link>
-              <Link to="/" className="text-black/70 hover:text-black transition-colors text-sm">
+              </button>
+              <button
+                onClick={() => setOpenModal("returns")}
+                className="text-black/70 hover:text-black transition-colors text-sm text-left"
+              >
                 Returns
-              </Link>
-              <Link to="/" className="text-black/70 hover:text-black transition-colors text-sm">
+              </button>
+              <button
+                onClick={() => setOpenModal("warranty")}
+                className="text-black/70 hover:text-black transition-colors text-sm text-left"
+              >
                 Warranty
-              </Link>
-              <Link to="/" className="text-black/70 hover:text-black transition-colors text-sm">
+              </button>
+              <button
+                onClick={() => setOpenModal("faqs")}
+                className="text-black/70 hover:text-black transition-colors text-sm text-left"
+              >
                 FAQs
-              </Link>
+              </button>
             </nav>
           </div>
 
