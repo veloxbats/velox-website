@@ -1,8 +1,133 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Facebook, Instagram, Twitter, Mail } from "lucide-react";
+import { SupportModal } from "./SupportModal";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const [openModal, setOpenModal] = useState<string | null>(null);
+
+  const supportContent: Record<string, React.ReactNode> = {
+    shipping: (
+      <div className="space-y-4">
+        <p>
+          We offer fast and reliable shipping to get your Velox bats to you quickly.
+        </p>
+        <h3 className="font-bold text-lg">Shipping Options</h3>
+        <ul className="space-y-2 list-disc list-inside">
+          <li>
+            <strong>Standard Shipping:</strong> 5-7 business days ($9.99)
+          </li>
+          <li>
+            <strong>Expedited Shipping:</strong> 2-3 business days ($24.99)
+          </li>
+          <li>
+            <strong>Overnight Shipping:</strong> Next business day ($49.99)
+          </li>
+        </ul>
+        <h3 className="font-bold text-lg pt-4">Tracking</h3>
+        <p>
+          All orders include tracking information. You'll receive a tracking number via email once your order ships.
+        </p>
+        <h3 className="font-bold text-lg pt-4">Free Shipping</h3>
+        <p>
+          Free standard shipping on orders over $150!
+        </p>
+      </div>
+    ),
+    returns: (
+      <div className="space-y-4">
+        <p>
+          We want you to be completely satisfied with your Velox bat. If you need to return an item, here's how:
+        </p>
+        <h3 className="font-bold text-lg">Return Policy</h3>
+        <ul className="space-y-2 list-disc list-inside">
+          <li>
+            <strong>30-Day Returns:</strong> Unused items can be returned within 30 days for a full refund
+          </li>
+          <li>
+            <strong>Defective Items:</strong> Manufacturing defects are covered under our warranty
+          </li>
+          <li>
+            <strong>Shipping:</strong> Return shipping is free for defective items; standard returns have a $9.99 fee
+          </li>
+        </ul>
+        <h3 className="font-bold text-lg pt-4">How to Return</h3>
+        <ol className="space-y-2 list-decimal list-inside">
+          <li>Contact our support team at returns@velox.com</li>
+          <li>Receive a return shipping label</li>
+          <li>Ship the item back to us</li>
+          <li>Receive your refund within 5-7 business days</li>
+        </ol>
+      </div>
+    ),
+    warranty: (
+      <div className="space-y-4">
+        <p>
+          Velox stands behind the quality of every bat we make.
+        </p>
+        <h3 className="font-bold text-lg">Limited 1-Year Warranty</h3>
+        <p>
+          All Velox cricket bats come with a 1-year limited manufacturer's warranty covering defects in materials and workmanship.
+        </p>
+        <h3 className="font-bold text-lg pt-4">What's Covered</h3>
+        <ul className="space-y-2 list-disc list-inside">
+          <li>Manufacturing defects in the willow or handle</li>
+          <li>Cracks or splits due to material failure</li>
+          <li>Hardware failures (binding, toe, etc.)</li>
+        </ul>
+        <h3 className="font-bold text-lg pt-4">What's Not Covered</h3>
+        <ul className="space-y-2 list-disc list-inside">
+          <li>Normal wear and tear from use</li>
+          <li>Damage from misuse or negligence</li>
+          <li>Environmental damage (extreme weather, moisture)</li>
+          <li>Cosmetic damage only</li>
+        </ul>
+        <h3 className="font-bold text-lg pt-4">How to Claim</h3>
+        <p>
+          Contact us with your purchase proof and photos of the defect. We'll evaluate and provide a replacement or refund.
+        </p>
+      </div>
+    ),
+    faqs: (
+      <div className="space-y-4">
+        <div>
+          <h3 className="font-bold text-lg mb-2">Which series is best for me?</h3>
+          <p>
+            <strong>Beginners:</strong> Strike Series offers great value and easy handling.
+            <br />
+            <strong>Intermediate:</strong> Impact Series provides better performance and durability.
+            <br />
+            <strong>Advanced:</strong> Velocity Series delivers professional-grade performance.
+          </p>
+        </div>
+        <div>
+          <h3 className="font-bold text-lg mb-2">Leather vs. Tennis Ball Bats</h3>
+          <p>
+            Leather ball bats are designed for traditional cricket with heavier balls. Tennis ball bats have a scoop design optimized for lighter, softer balls.
+          </p>
+        </div>
+        <div>
+          <h3 className="font-bold text-lg mb-2">How do I care for my bat?</h3>
+          <p>
+            Store in a dry place, avoid extreme temperatures, and use a bat cover when traveling. Apply linseed oil occasionally to maintain the willow.
+          </p>
+        </div>
+        <div>
+          <h3 className="font-bold text-lg mb-2">What's the break-in period?</h3>
+          <p>
+            New bats typically need 5-10 hours of use to perform optimally. Start with softer bowling and gradually increase intensity.
+          </p>
+        </div>
+        <div>
+          <h3 className="font-bold text-lg mb-2">Do you offer bulk orders?</h3>
+          <p>
+            Yes! For team purchases and bulk orders, contact our sales team at sales@velox.com for special pricing.
+          </p>
+        </div>
+      </div>
+    ),
+  };
 
   return (
     <footer className="w-full bg-white border-t border-black/10 px-4 sm:px-6 lg:px-8">
