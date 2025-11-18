@@ -27,13 +27,13 @@ const Header = () => (
         <Link to="/" className="text-black/70 hover:text-black transition-colors font-medium">
           Home
         </Link>
-        <Link to="/category/leather-ball" className="text-black/70 hover:text-black transition-colors font-medium">
+        <Link to="/shop" className="text-black/70 hover:text-black transition-colors font-medium">
           Products
         </Link>
-        <Link to="/" className="text-black/70 hover:text-black transition-colors font-medium">
+        <Link to="/about" className="text-black/70 hover:text-black transition-colors font-medium">
           About
         </Link>
-        <Link to="/" className="text-black/70 hover:text-black transition-colors font-medium">
+        <Link to="/contact" className="text-black/70 hover:text-black transition-colors font-medium">
           Contact
         </Link>
       </nav>
