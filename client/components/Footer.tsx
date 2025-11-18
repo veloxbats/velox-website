@@ -252,6 +252,32 @@ export const Footer = () => {
           </div>
         </div>
       </div>
+
+      {/* Support Modals */}
+      <SupportModal
+        isOpen={openModal === "shipping"}
+        onClose={() => setOpenModal(null)}
+        title="Shipping Information"
+        content={supportContent.shipping}
+      />
+      <SupportModal
+        isOpen={openModal === "returns"}
+        onClose={() => setOpenModal(null)}
+        title="Returns Policy"
+        content={supportContent.returns}
+      />
+      <SupportModal
+        isOpen={openModal === "warranty"}
+        onClose={() => setOpenModal(null)}
+        title="Warranty Information"
+        content={supportContent.warranty}
+      />
+      <SupportModal
+        isOpen={openModal === "faqs"}
+        onClose={() => setOpenModal(null)}
+        title="Frequently Asked Questions"
+        content={supportContent.faqs}
+      />
     </footer>
   );
 };
