@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Index from "./pages/Index";
 import Explore from "./pages/Explore";
 import Shop from "./pages/Shop";
+import Product from "./pages/Product";
 import Category from "./pages/Category";
 import NotFound from "./pages/NotFound";
 import { Footer } from "./components/Footer";
