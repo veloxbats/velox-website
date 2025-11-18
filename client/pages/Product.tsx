@@ -3,26 +3,30 @@ import { useParams, Link } from "react-router-dom";
 export default function Product() {
   const { id } = useParams();
 
-  const products: Record<string, {
-    name: string;
-    series: string;
-    description: string;
-    price: string;
-    material: string;
-    features: string[];
-  }> = {
+  const products: Record<
+    string,
+    {
+      name: string;
+      series: string;
+      description: string;
+      price: string;
+      material: string;
+      features: string[];
+    }
+  > = {
     "1": {
       name: "Strike Series Leather Ball Bat",
       series: "Strike",
-      description: "Entry-level Kashmir Willow cricket bat perfect for growing players",
+      description:
+        "Entry-level Kashmir Willow cricket bat perfect for growing players",
       price: "$89.99",
       material: "Kashmir Willow",
       features: [
         "Lightweight and easy to handle",
         "Good sweet spot for beginners",
         "Durable construction",
-        "Great value for money"
-      ]
+        "Great value for money",
+      ],
     },
     "2": {
       name: "Impact Series Leather Ball Bat",
@@ -34,8 +38,8 @@ export default function Product() {
         "Thicker edges for better performance",
         "Improved sweet spot",
         "Enhanced durability",
-        "Professional-quality construction"
-      ]
+        "Professional-quality construction",
+      ],
     },
     "3": {
       name: "Velocity Series Leather Ball Bat",
@@ -47,8 +51,8 @@ export default function Product() {
         "Maximum performance and power",
         "Superior willow grade",
         "Professional-grade construction",
-        "Tournament-quality equipment"
-      ]
+        "Tournament-quality equipment",
+      ],
     },
     "4": {
       name: "Single Blade Hard Tennis Bat",
@@ -60,8 +64,8 @@ export default function Product() {
         "Optimized scoop profile",
         "Single blade design",
         "Lightweight and maneuverable",
-        "Great for beginners"
-      ]
+        "Great for beginners",
+      ],
     },
     "5": {
       name: "Double Blade Hard Tennis Bat",
@@ -73,9 +77,9 @@ export default function Product() {
         "Double blade design",
         "Professional-grade scoop",
         "Maximum power and control",
-        "Tournament-approved"
-      ]
-    }
+        "Tournament-approved",
+      ],
+    },
   };
 
   const product = products[id || ""];
@@ -149,7 +153,9 @@ export default function Product() {
             {/* Material */}
             <div>
               <p className="text-black/60 text-sm mb-2">Material</p>
-              <p className="text-lg font-semibold text-black">{product.material}</p>
+              <p className="text-lg font-semibold text-black">
+                {product.material}
+              </p>
             </div>
 
             {/* Features */}
@@ -182,9 +188,12 @@ export default function Product() {
 
         {/* Related section */}
         <div className="mt-20 pt-20 border-t border-black/10">
-          <h2 className="text-3xl font-bold text-black mb-6">More from {product.series} Series</h2>
+          <h2 className="text-3xl font-bold text-black mb-6">
+            More from {product.series} Series
+          </h2>
           <p className="text-black/60 mb-8">
-            Explore other bats in the {product.series} series or check out our complete collection.
+            Explore other bats in the {product.series} series or check out our
+            complete collection.
           </p>
           <Link
             to="/shop"

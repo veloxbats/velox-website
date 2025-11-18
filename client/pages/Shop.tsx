@@ -12,7 +12,8 @@ export default function Shop() {
               Shop Velox Bats
             </h1>
             <p className="text-xl text-black/60 max-w-2xl">
-              Find the perfect cricket bat for your game. Browse our complete collection of premium, performance-engineered equipment.
+              Find the perfect cricket bat for your game. Browse our complete
+              collection of premium, performance-engineered equipment.
             </p>
             <div className="flex gap-4 pt-4">
               <Link

@@ -8,7 +8,7 @@ export const ContactUs = () => {
   });
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -59,7 +59,10 @@ export const ContactUs = () => {
             <form onSubmit={handleSubmit} className="space-y-6">
               {/* Name input */}
               <div>
-                <label htmlFor="name" className="block text-sm font-semibold text-black mb-2">
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-semibold text-black mb-2"
+                >
                   Name
                 </label>
                 <input
@@ -76,7 +79,10 @@ export const ContactUs = () => {
 
               {/* Email input */}
               <div>
-                <label htmlFor="email" className="block text-sm font-semibold text-black mb-2">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-semibold text-black mb-2"
+                >
                   Email
                 </label>
                 <input
@@ -93,7 +99,10 @@ export const ContactUs = () => {
 
               {/* Message textarea */}
               <div>
-                <label htmlFor="message" className="block text-sm font-semibold text-black mb-2">
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-semibold text-black mb-2"
+                >
                   Message
                 </label>
                 <textarea

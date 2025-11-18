@@ -11,7 +11,8 @@ export const Footer = () => {
     shipping: (
       <div className="space-y-4">
         <p>
-          We offer fast and reliable shipping to get your Velox bats to you quickly.
+          We offer fast and reliable shipping to get your Velox bats to you
+          quickly.
         </p>
         <h3 className="font-bold text-lg">Shipping Options</h3>
         <ul className="space-y-2 list-disc list-inside">
@@ -27,29 +28,32 @@ export const Footer = () => {
         </ul>
         <h3 className="font-bold text-lg pt-4">Tracking</h3>
         <p>
-          All orders include tracking information. You'll receive a tracking number via email once your order ships.
+          All orders include tracking information. You'll receive a tracking
+          number via email once your order ships.
         </p>
         <h3 className="font-bold text-lg pt-4">Free Shipping</h3>
-        <p>
-          Free standard shipping on orders over $150!
-        </p>
+        <p>Free standard shipping on orders over $150!</p>
       </div>
     ),
     returns: (
       <div className="space-y-4">
         <p>
-          We want you to be completely satisfied with your Velox bat. If you need to return an item, here's how:
+          We want you to be completely satisfied with your Velox bat. If you
+          need to return an item, here's how:
         </p>
         <h3 className="font-bold text-lg">Return Policy</h3>
         <ul className="space-y-2 list-disc list-inside">
           <li>
-            <strong>30-Day Returns:</strong> Unused items can be returned within 30 days for a full refund
+            <strong>30-Day Returns:</strong> Unused items can be returned within
+            30 days for a full refund
           </li>
           <li>
-            <strong>Defective Items:</strong> Manufacturing defects are covered under our warranty
+            <strong>Defective Items:</strong> Manufacturing defects are covered
+            under our warranty
           </li>
           <li>
-            <strong>Shipping:</strong> Return shipping is free for defective items; standard returns have a $9.99 fee
+            <strong>Shipping:</strong> Return shipping is free for defective
+            items; standard returns have a $9.99 fee
           </li>
         </ul>
         <h3 className="font-bold text-lg pt-4">How to Return</h3>
@@ -63,12 +67,11 @@ export const Footer = () => {
     ),
     warranty: (
       <div className="space-y-4">
-        <p>
-          Velox stands behind the quality of every bat we make.
-        </p>
+        <p>Velox stands behind the quality of every bat we make.</p>
         <h3 className="font-bold text-lg">Limited 1-Year Warranty</h3>
         <p>
-          All Velox cricket bats come with a 1-year limited manufacturer's warranty covering defects in materials and workmanship.
+          All Velox cricket bats come with a 1-year limited manufacturer's
+          warranty covering defects in materials and workmanship.
         </p>
         <h3 className="font-bold text-lg pt-4">What's Covered</h3>
         <ul className="space-y-2 list-disc list-inside">
@@ -85,44 +88,60 @@ export const Footer = () => {
         </ul>
         <h3 className="font-bold text-lg pt-4">How to Claim</h3>
         <p>
-          Contact us with your purchase proof and photos of the defect. We'll evaluate and provide a replacement or refund.
+          Contact us with your purchase proof and photos of the defect. We'll
+          evaluate and provide a replacement or refund.
         </p>
       </div>
     ),
     faqs: (
       <div className="space-y-4">
         <div>
-          <h3 className="font-bold text-lg mb-2">Which series is best for me?</h3>
+          <h3 className="font-bold text-lg mb-2">
+            Which series is best for me?
+          </h3>
           <p>
-            <strong>Beginners:</strong> Strike Series offers great value and easy handling.
+            <strong>Beginners:</strong> Strike Series offers great value and
+            easy handling.
             <br />
-            <strong>Intermediate:</strong> Impact Series provides better performance and durability.
+            <strong>Intermediate:</strong> Impact Series provides better
+            performance and durability.
             <br />
-            <strong>Advanced:</strong> Velocity Series delivers professional-grade performance.
+            <strong>Advanced:</strong> Velocity Series delivers
+            professional-grade performance.
           </p>
         </div>
         <div>
-          <h3 className="font-bold text-lg mb-2">Leather vs. Tennis Ball Bats</h3>
+          <h3 className="font-bold text-lg mb-2">
+            Leather vs. Tennis Ball Bats
+          </h3>
           <p>
-            Leather ball bats are designed for traditional cricket with heavier balls. Tennis ball bats have a scoop design optimized for lighter, softer balls.
+            Leather ball bats are designed for traditional cricket with heavier
+            balls. Tennis ball bats have a scoop design optimized for lighter,
+            softer balls.
           </p>
         </div>
         <div>
           <h3 className="font-bold text-lg mb-2">How do I care for my bat?</h3>
           <p>
-            Store in a dry place, avoid extreme temperatures, and use a bat cover when traveling. Apply linseed oil occasionally to maintain the willow.
+            Store in a dry place, avoid extreme temperatures, and use a bat
+            cover when traveling. Apply linseed oil occasionally to maintain the
+            willow.
           </p>
         </div>
         <div>
-          <h3 className="font-bold text-lg mb-2">What's the break-in period?</h3>
+          <h3 className="font-bold text-lg mb-2">
+            What's the break-in period?
+          </h3>
           <p>
-            New bats typically need 5-10 hours of use to perform optimally. Start with softer bowling and gradually increase intensity.
+            New bats typically need 5-10 hours of use to perform optimally.
+            Start with softer bowling and gradually increase intensity.
           </p>
         </div>
         <div>
           <h3 className="font-bold text-lg mb-2">Do you offer bulk orders?</h3>
           <p>
-            Yes! For team purchases and bulk orders, contact our sales team at sales@velox.com for special pricing.
+            Yes! For team purchases and bulk orders, contact our sales team at
+            sales@velox.com for special pricing.
           </p>
         </div>
       </div>
@@ -139,7 +158,8 @@ export const Footer = () => {
             <div className="space-y-4">
               <h3 className="text-2xl font-bold text-black">Velox</h3>
               <p className="text-sm text-black/60 leading-relaxed max-w-xs">
-                Performance-engineered cricket bats for players who demand excellence.
+                Performance-engineered cricket bats for players who demand
+                excellence.
               </p>
             </div>
           </div>
@@ -150,16 +170,28 @@ export const Footer = () => {
               Quick Links
             </h4>
             <nav className="space-y-2 flex flex-col">
-              <Link to="/" className="text-black/70 hover:text-black transition-colors text-sm">
+              <Link
+                to="/"
+                className="text-black/70 hover:text-black transition-colors text-sm"
+              >
                 Home
               </Link>
-              <Link to="/category/leather-ball" className="text-black/70 hover:text-black transition-colors text-sm">
+              <Link
+                to="/category/leather-ball"
+                className="text-black/70 hover:text-black transition-colors text-sm"
+              >
                 Products
               </Link>
-              <Link to="/" className="text-black/70 hover:text-black transition-colors text-sm">
+              <Link
+                to="/"
+                className="text-black/70 hover:text-black transition-colors text-sm"
+              >
                 About
               </Link>
-              <Link to="/" className="text-black/70 hover:text-black transition-colors text-sm">
+              <Link
+                to="/"
+                className="text-black/70 hover:text-black transition-colors text-sm"
+              >
                 Contact
               </Link>
             </nav>

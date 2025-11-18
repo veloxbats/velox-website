@@ -37,11 +37,7 @@ export const Testimonials = () => {
         <Star
           key={i}
           size={16}
-          className={
-            i < rating
-              ? "fill-black text-black"
-              : "text-black/20"
-          }
+          className={i < rating ? "fill-black text-black" : "text-black/20"}
         />
       ))}
     </div>
@@ -91,9 +87,7 @@ export const Testimonials = () => {
                   <p className="font-semibold text-black text-sm">
                     {testimonial.name}
                   </p>
-                  <p className="text-xs text-black/50">
-                    {testimonial.role}
-                  </p>
+                  <p className="text-xs text-black/50">{testimonial.role}</p>
                 </div>
               </div>
             </div>

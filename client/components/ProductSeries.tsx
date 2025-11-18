@@ -5,21 +5,24 @@ export const ProductSeries = () => {
       title: "Strike Series",
       subtitle: "Entry Level",
       material: "Kashmir Willow",
-      description: "Perfect for growing players seeking excellent value and reliable performance.",
+      description:
+        "Perfect for growing players seeking excellent value and reliable performance.",
     },
     {
       id: 2,
       title: "Impact Series",
       subtitle: "Superior",
       material: "Kashmir Willow",
-      description: "Enhanced edges and premium construction for elevated game performance.",
+      description:
+        "Enhanced edges and premium construction for elevated game performance.",
     },
     {
       id: 3,
       title: "Velocity Series",
       subtitle: "Top Level",
       material: "English Willow",
-      description: "Elite craftsmanship and maximum performance for professional players.",
+      description:
+        "Elite craftsmanship and maximum performance for professional players.",
     },
   ];
 

@@ -23,7 +23,8 @@ export const Hero = () => {
           </div>
 
           <p className="text-lg sm:text-xl text-black/70 max-w-md leading-relaxed">
-            Performance-engineered cricket bats crafted for power, precision, and control.
+            Performance-engineered cricket bats crafted for power, precision,
+            and control.
           </p>
 
           {/* Buttons */}

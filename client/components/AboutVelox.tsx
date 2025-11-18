@@ -31,15 +31,28 @@ export const AboutVelox = () => {
 
             <div className="space-y-4 text-black/70 text-lg leading-relaxed">
               <p>
-                At Velox, we believe that premium cricket bats should combine engineering excellence with timeless craftsmanship. Every bat begins as carefully selected willow—either premium Kashmir or elite English—and undergoes rigorous testing to ensure it meets our exacting standards.
+                At Velox, we believe that premium cricket bats should combine
+                engineering excellence with timeless craftsmanship. Every bat
+                begins as carefully selected willow—either premium Kashmir or
+                elite English—and undergoes rigorous testing to ensure it meets
+                our exacting standards.
               </p>
 
               <p>
-                Our design philosophy centers on three core principles: power, precision, and durability. We engineer thick edges for maximum performance, optimize weight distribution for superior control, and test every bat to withstand years of competitive play. The result is a collection of bats trusted by serious cricket players worldwide.
+                Our design philosophy centers on three core principles: power,
+                precision, and durability. We engineer thick edges for maximum
+                performance, optimize weight distribution for superior control,
+                and test every bat to withstand years of competitive play. The
+                result is a collection of bats trusted by serious cricket
+                players worldwide.
               </p>
 
               <p>
-                From entry-level players discovering their passion to professionals pushing the boundaries of performance, Velox offers engineered solutions for every level. Each series represents our commitment to making premium cricket bats accessible, reliable, and truly exceptional.
+                From entry-level players discovering their passion to
+                professionals pushing the boundaries of performance, Velox
+                offers engineered solutions for every level. Each series
+                represents our commitment to making premium cricket bats
+                accessible, reliable, and truly exceptional.
               </p>
             </div>
           </div>

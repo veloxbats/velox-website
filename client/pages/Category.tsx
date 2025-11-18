@@ -18,7 +18,8 @@ export default function Category() {
             {categoryName}
           </h1>
           <p className="text-lg text-black/60 max-w-md mx-auto">
-            This category page is coming soon. Continue building this section by providing more details about what you'd like to see here.
+            This category page is coming soon. Continue building this section by
+            providing more details about what you'd like to see here.
           </p>
           <div className="pt-8">
             <Link

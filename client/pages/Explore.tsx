@@ -13,7 +13,9 @@ export default function Explore() {
               Explore Our Bats
             </h1>
             <p className="text-xl text-black/60 max-w-2xl">
-              Browse our complete collection of performance-engineered cricket bats. From entry-level to professional grade, find the perfect bat for your game.
+              Browse our complete collection of performance-engineered cricket
+              bats. From entry-level to professional grade, find the perfect bat
+              for your game.
             </p>
             <div className="flex gap-4 pt-4">
               <Link
