@@ -10,6 +10,8 @@ import Explore from "./pages/Explore";
 import Shop from "./pages/Shop";
 import Product from "./pages/Product";
 import Category from "./pages/Category";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import { Footer } from "./components/Footer";
 
