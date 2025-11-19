@@ -25,7 +25,10 @@ export const CategoryCards = () => {
               <div className="absolute top-0 left-0 h-1 w-0 bg-velox-neon-green group-hover:w-full transition-all duration-300" />
 
               <div className="relative z-10 text-center space-y-2 px-4">
-                <CategoryIcon type="leather-ball" className="w-16 h-16 mx-auto" />
+                <CategoryIcon
+                  type="leather-ball"
+                  className="w-16 h-16 mx-auto"
+                />
                 <div>
                   <h3 className="text-lg font-bold text-black">
                     Leather Ball Bats
@@ -49,7 +52,10 @@ export const CategoryCards = () => {
               <div className="absolute top-0 left-0 h-1 w-0 bg-velox-neon-green group-hover:w-full transition-all duration-300" />
 
               <div className="relative z-10 text-center space-y-2 px-4">
-                <CategoryIcon type="tennis-scoop" className="w-16 h-16 mx-auto" />
+                <CategoryIcon
+                  type="tennis-scoop"
+                  className="w-16 h-16 mx-auto"
+                />
                 <div>
                   <h3 className="text-lg font-bold text-black">
                     Hard Tennis Scoop Bats
