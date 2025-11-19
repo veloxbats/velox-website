@@ -61,7 +61,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.PROD ? '/velox-website' : '/'}>
         <Header />
         <div className="min-h-screen flex flex-col">
           <div className="flex-1">
