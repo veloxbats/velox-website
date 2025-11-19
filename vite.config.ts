@@ -4,8 +4,8 @@ import path from "path";
 import { createServer } from "./server";
 
 // https://vitejs.dev/config/
-export default defineConfig(({ mode }) => ({
-  base: process.env.NODE_ENV === "production" ? "/velox-website/" : "/",
+export default defineConfig(({ mode, command }) => ({
+  base: command === "build" ? "/velox-website/" : "/",
   server: {
     host: "::",
     port: 8080,
